@@ -15,12 +15,12 @@
 
     <div class="container">
         <div class="header-container">
-            <form action="#"> 
+            <form id="select-color-form" class="select-color-form" action="#"> 
     
                 <input id="selected-color" class="selected-color" type="color" aria-label="Select a color">   
 
                
-                <select id="color-schemes" name="lang" aria-label="Color schemes list" required>
+                <select id="color-schemes" class="color-schemes" name="lang" aria-label="Color schemes list" required>
                     <option value="monochrome">Monochrome</option>
                     <option value="monochrome-dark">Monochrome-dark</option>
                     <option value="monochrome-light">Monochrome-light</option>
@@ -30,7 +30,7 @@
                     <option value="triad">Triad</option>
                 </select>
 
-                <button>Get color scheme</button>
+                <button id="get-color-scheme-btn" class="get-color-scheme-btn">Get color scheme</button>
               
             </form>
 

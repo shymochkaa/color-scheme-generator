@@ -8,7 +8,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1C1C1C;
-    font-family: "Inter", serif;;
+    font-family: "Inter", serif;
+    font-size: 0.75rem;
 }
 
 .container {
@@ -23,6 +24,46 @@ body {
     height: 90px;
 }
 
+.select-color-form {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selected-color {
+    width: 61px;
+    height: 42px;
+  
+    border: none;
+    background-color: #D1D5DB;
+    cursor: pointer;
+}
+
+
+.color-schemes {
+    font-size: 1rem;
+    width: 312px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    padding:  0.7em 0.7em;
+    appearance: none;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+  
+   
+}
+
+.get-color-scheme-btn {
+    font-size: 0.75rem;
+    background: none;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    padding: 1.1em 1em;
+
+}
+
 .colors {
     display: flex;
     height: 414px;
@@ -32,7 +73,6 @@ body {
 .color {
     height: 414px;
     width: 110px;
-    /* border: 1px solid brown; */
 }
 .color-one {
     background-color: #F55A5A;
@@ -56,6 +96,7 @@ body {
     display: flex;
     height: 46px;
     background-color: #FFFFFF;
+    font-size: 12px;
    
 }
 
@@ -65,6 +106,5 @@ body {
     align-items: center;
     height: 46px;
     width: 110px;
-    /* border: 1px solid brown; */
     
 }
