@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>ColorSchemeGenerator</title>
 </head>
+
 <body>
 
     <div class="container">
         <div class="header-container">
-            <form id="select-color-form" class="select-color-form" action="#"> 
-    
-                <input id="selected-color" class="selected-color" type="color" aria-label="Select a color">   
+            <form id="select-color-form" class="select-color-form" action="#">
 
-               
+                <input id="selected-color" class="selected-color" type="color" name="selectedColor" aria-label="Select a color">
+
                 <select id="color-schemes" class="color-schemes" name="lang" aria-label="Color schemes list" required>
                     <option value="monochrome">Monochrome</option>
                     <option value="monochrome-dark">Monochrome-dark</option>
@@ -31,7 +34,7 @@
                 </select>
 
                 <button id="get-color-scheme-btn" class="get-color-scheme-btn">Get color scheme</button>
-              
+
             </form>
 
         </div>
@@ -43,16 +46,38 @@
             <div id="color-five" class="color color-five"></div>
 
         </div>
-        <div class="hex-colors">
-            <div id="hex-color-one" class="hex-color hex-color-one">#F55A5A</div>
-            <div id="hex-color-two" class="hex-color hex-color-two">#2B283A</div>
-            <div id="hex-color-three" class="hex-color hex-color-three">#FBF3AB</div>
-            <div id="hex-color-four" class="hex-color hex-color-four">#AAD1B6</div>
-            <div id="hex-color-five" class="hex-color hex-color-five">#A626D3</div>
-        </div>
 
+        <div class="hex-colors">
+            <div id="hex-color-one" class="hex-color hex-color-one">
+                <span class="hex-color-code">#F55A5A</span>
+                <span class="tooltiptext">Copy to clipboard</span>
+            </div>
+
+            <div id="hex-color-two" class="hex-color hex-color-two">
+                <span class="hex-color-code">#F55A5A</span>
+                <span class="tooltiptext">Copy to clipboard</span>
+            </div>
+
+            <div id="hex-color-three" class="hex-color hex-color-three">
+                <span class="hex-color-code">#F55A5A</span>
+                <span class="tooltiptext">Copy to clipboard</span>
+            </div>
+
+            <div id="hex-color-four" class="hex-color hex-color-four">
+                <span class="hex-color-code">#F55A5A</span>
+                <span class="tooltiptext">Copy to clipboard</span>
+            </div>
+
+            <div id="hex-color-five" class="hex-color hex-color-five">
+                <span class="hex-color-code">#F55A5A</span>
+                <span class="tooltiptext">Copy to clipboard</span>
+            </div>
+
+        </div>
     </div>
 
+    </div>
     <script src="./scripts/index.js" type="module"></script>
 </body>
+
 </html>
